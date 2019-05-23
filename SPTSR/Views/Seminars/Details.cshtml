@@ -1,0 +1,106 @@
+﻿@model SPTSR.Models.Seminar
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Seminar</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Kolegiji.Naziv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Kolegiji.Naziv)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Teme.Naslov)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Teme.Naslov)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Termini.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Termini.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxClanovi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxClanovi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RokPrijave)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RokPrijave)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Clan1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clan1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Clan2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clan2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Clan3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clan3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Clan4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clan4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Clan5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Clan5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.KorisnikId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KorisnikId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

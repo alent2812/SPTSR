@@ -1,0 +1,34 @@
+﻿@model SPTSR.Models.Termin
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Termin</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Vrijeme)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vrijeme)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BrojIzlaganja)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BrojIzlaganja)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
